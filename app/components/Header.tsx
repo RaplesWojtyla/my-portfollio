@@ -1,5 +1,4 @@
 import { assets } from '@/assets/assets'
-import { assert } from 'console'
 import Image from 'next/image'
 import React from 'react'
 

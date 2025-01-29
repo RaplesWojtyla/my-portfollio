@@ -15,7 +15,6 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-// import profile_img from './wojtyla-profile-image.jpg';
 import profile_img from './wojtyla-photo.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
