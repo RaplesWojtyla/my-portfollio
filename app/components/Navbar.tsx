@@ -59,7 +59,7 @@ const Navbar = () => {
 						onClick={openMenu} 
 						className='block md:hidden ml-3'
 					>
-						<Image src={assets.menu_black} alt='' className='w-6' />
+						<Image src={assets.menu_black} alt='menu-icon' className='w-6' />
 					</button>
 
 					{/* ------------- Mobile Menu ------------- */}

@@ -13,7 +13,7 @@ const Header = () => {
 			/>
 		</div>
 		<h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo'>
-			Hi! I'm Patra Rafles Wostyla Sinaga
+			Hi! I&apos;m Patra Rafles Wostyla Sinaga
 			<Image 
 				src={assets.hand_icon}
 				alt='hand-icon'
@@ -32,7 +32,7 @@ const Header = () => {
 				href="#contact"
 			>
 				Contact me
-				<Image src={assets.right_arrow_white} className='w-4' alt='' />
+				<Image src={assets.right_arrow_white} className='w-4' alt='right-arrow-icon' />
 			</a>
 			<a 
 				className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500' 
@@ -40,7 +40,7 @@ const Header = () => {
 				download
 			>
 				My resume
-				<Image src={assets.download_icon} className='w-4' alt='' />
+				<Image src={assets.download_icon} className='w-4' alt='download-icon' />
 			</a>
 		</div>
 	</div>
