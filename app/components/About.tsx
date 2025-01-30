@@ -18,7 +18,7 @@ const About = () => {
 				</p>
 
 				<ul className='max-w-2xl grid grid-cols-1 sm:grid-cols-3 gap-6'>
-					{infoList.map(({icon, iconDark, title, description}, index) => (
+					{infoList.map(({icon, title, description}, index) => (
 						<li
 							className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:shadow-black duration-150' 
 							key={index}
