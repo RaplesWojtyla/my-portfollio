@@ -24,7 +24,7 @@ const Header = () => {
 			Full-Stack Developer based in Indonesia.
 		</h1>
 		<p className='max-w-2xl mx-auto font-Ovo'>
-			An Information Technology undergraduate with over two years of experience in programming, specializing in data-driven solutions for IT challenges. Highly motivated to make an impact in Full-Stack Engineering, Artificial Intelligence/Machine Learning, and Project Management. Experienced as a competitive programmer skilled in applying algorithms and data structures to solve complex problems critically and innovatively. Recognized for a creative and analytical problem-solving approach.
+			I&apos;m a junior full-stack developer from Medan, Indonesia with over 2 years experience in algorithm & data structures, and web development
 		</p>
 		<div className='flex flex-col sm:flex-row items-center gap-2 mt-4'>
 			<a 
