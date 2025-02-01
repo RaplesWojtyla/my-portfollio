@@ -24,7 +24,7 @@ const Header = () => {
 			Full-Stack Developer based in Indonesia.
 		</h1>
 		<p className='max-w-2xl mx-auto font-Ovo'>
-			I&apos;m a junior full-stack developer from Medan, Indonesia with over 2 years experience in algorithm & data structures, and web development
+			I&apos;m a junior full-stack developer from Medan, Indonesia with over 3 years experience in algorithm & data structures, and web development
 		</p>
 		<div className='flex flex-col sm:flex-row items-center gap-2 mt-4'>
 			<a 

@@ -14,7 +14,7 @@ const About = () => {
 			</div>
 			<div className='flex-1'>
 				<p  className='mb-10 max-w-2xl text-justify'>
-					I&apos;m an IT undergraduate with 2+ years of programming experience, specializing in data-driven solutions. Passionate about Full-Stack Engineering, AI/ML, and Project Management. Skilled in competitive programming, algorithms, and problem-solving with a creative and analytical approach.
+					I&apos;m an IT undergraduate with 3+ years of programming experience, specializing in data-driven solutions. Passionate about Full-Stack Engineering, AI/ML, and Project Management. Skilled in competitive programming, algorithms, and problem-solving with a creative and analytical approach.
 				</p>
 
 				<ul className='max-w-2xl grid grid-cols-1 sm:grid-cols-3 gap-6'>
@@ -41,7 +41,7 @@ const About = () => {
 				<ul className='flex items-center gap-3 sm:gap-5'>
 					{toolsData.map((tool, index) => (
 						<li
-							className='w-12 sm:w-14 border border-gray-400 flex justify-center items-center rounded-lg aspect-square cursor-pointer hover:-translate-y-1 duration-150' 
+							className='w-12 sm:w-14 border border-gray-400 flex justify-center items-center rounded-lg aspect-square cursor-pointer hover:-translate-y-1 hover:bg-lightHover duration-150' 
 							key={index}
 						>
 							<Image 
