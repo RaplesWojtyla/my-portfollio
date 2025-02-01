@@ -22,7 +22,8 @@ export default {
         'white': '4px 4px 0 rgba(255, 255, 255, 1)'
       },
       gridTemplateColumns: {
-        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
+        'auto': 'repeat(auto-fit, minmax(200px, 1fr))',
+        'projects-auto': 'repeat(auto-fit, minmax(300px, 1fr))',
       }
     },
   },

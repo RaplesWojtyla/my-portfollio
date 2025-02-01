@@ -74,26 +74,36 @@ export const assets = {
     mysql
 };
 
-export const workData = [
+export const projectData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Assembly: Endgame',
+        description: 'Web App',
+        bgImage: '/assembly-endgame.png',
+    },
+    {
+        title: 'Recipe Generator',
+        description: 'Web App with Integrated AI',
+        bgImage: '/recipe-gene.png',
+    },
+    {
+        title: 'Poskesdes Laubaleng',
+        description: 'E-Commerce Web App',
+        bgImage: '/poskesdes.png',
+    },
+    {
+        title: 'E-Cycle',
+        description: 'Mobile App',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Sparks',
+        description: 'Social Media Web App',
+        bgImage: '/sparks.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Skill Vortex',
+        description: 'Education Web App',
+        bgImage: '/skill-vortex.png',
     },
 ]
 
