@@ -6,7 +6,7 @@ const Services = () => {
 	return (
 		<div id='services' className='w-full px-[12%] py-10 scroll-mt-16'>
 			<h4 className='text-center mb-2 text-lg font-Ovo'>
-				What I offer
+				What I Offer
 			</h4>
 			<h2 className='text-center text-5xl font-Ovo'>
 				My Services

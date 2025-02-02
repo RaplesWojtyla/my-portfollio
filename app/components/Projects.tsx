@@ -27,7 +27,7 @@ const Projects = () => {
 							<h2 className='font-semibold'>{ title }</h2>
 							<p className='text-sm text-gray-700'>{ description }</p>
 						</div>
-						<div className='border border-black w-10 aspect-square rounded-full flex items-center justify-center shadow-[-1px_1px_0_rgba(0,0,0,1)] group-hover:shadow-[0_2px_0_rgba(0,0,0,1)] group-hover:bg-[#D8FC68] transition duration-300'>
+						<div className='border border-black w-10 aspect-square rounded-full flex items-center justify-center shadow-[-1px_1px_0_rgba(0,0,0,1)] group-hover:shadow-[0_2px_0_rgba(0,0,0,1)] group-hover:bg-[#68fcf7] transition duration-300'>
 							<Image
 								className='w-5'
 								src={ assets.send_icon }
