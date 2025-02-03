@@ -13,6 +13,14 @@ type Web3FormsResponse = {
 
 export const POST = async (req: NextRequest) => {
 	const formData: FormData = await req.json()
+	const apiKey: string = process.env.WEB3FORMS_API_KEY;
+
+	if (!apiKey) {
+		return NextResponse.json(
+			{ success: false, message: "Server misconfiguration" },
+			{ status: 500 }
+		)
+	}
 
 	try {
 		const res = await fetch('https://api.web3forms.com/submit', {
@@ -22,7 +30,7 @@ export const POST = async (req: NextRequest) => {
 			},
 			body: JSON.stringify({
 				...formData,
-				access_key: process.env.WEB3FORMS_API_KEY
+				access_key: apiKey
 			})
 		})
 
