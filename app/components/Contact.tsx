@@ -73,7 +73,7 @@ const Contact = () => {
 			<h4 className='text-center text-lg mb-2 font-Ovo'>Connect With Me</h4>
 			<h2 className='text-center text-5xl mb-5 font-Ovo'>Get In Touch</h2>
 			<p className='text-center max-w-2xl mx-auto mb-12 font-Ovo'>
-				I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.
+				I&apos;d love to hear from you! If you have any questions, comments or feedback, please use the form below.
 			</p>
 
 			<form className='max-w-2xl mx-auto' onSubmit={handleSubmit}>
