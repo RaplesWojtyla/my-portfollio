@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
-	const [isScroll, setIsScroll] = useState(false)
+	const [isScroll, setIsScroll] = useState<boolean>(false)
 	const menuRef = useRef<HTMLUListElement>(null)
 
 	useEffect(() => {
