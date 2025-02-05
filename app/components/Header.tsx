@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Header = ({ darkMode }: { darkMode: boolean }) => {
+const Header = () => {
 	return (
 		<div className='w-11/12 max-w-3xl h-screen text-center mx-auto flex flex-col items-center justify-center gap-4'>
 			<div>

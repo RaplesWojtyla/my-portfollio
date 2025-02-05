@@ -39,7 +39,7 @@ export default function Home() {
 				darkMode={darkMode}
 				changeTheme={changeTheme} 
 			/>
-			<Header darkMode={darkMode} />
+			<Header />
 			<About darkMode={darkMode} />
 			<Services darkMode={darkMode} />
 			<Projects darkMode={darkMode} />
