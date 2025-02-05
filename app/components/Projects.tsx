@@ -2,7 +2,13 @@ import { assets, projectData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Projects = () => {
+type ProjectData = {
+	title: string
+	description: string
+	bgImage: string
+}
+
+const Projects = ({ darkMode } : { darkMode: boolean }) => {
   return (
 	<div id='projects' className='w-full px-[12%] py-10 scroll-mt-16'>
 		<h4 className='text-center text-lg mb-2 font-Ovo'>
@@ -15,8 +21,8 @@ const Projects = () => {
 			Welcome to my projects! Explore a collection of projects showcasing my expertise in full-stack development.
 		</p>
 
-		<div className='grid grid-cols-projects-auto gap-6'>
-			{projectData.map(({ title, description, bgImage }, index) => (
+		<div className='grid grid-cols-projects-auto gap-6 dark:text-black'>
+			{projectData.map(({ title, description, bgImage }: ProjectData, index: number) => (
 				<div
 					className='aspect-video bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer shadow-md group'
 					style={{ backgroundImage: `url(${bgImage})` }}
@@ -39,8 +45,8 @@ const Projects = () => {
 			))}
 		</div>
 
-		<a className='w-max flex items-center justify-center gap-2 text-gray-700 border-[.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-200' href="">
-			Show more <Image className='w-4' src={assets.right_arrow_bold} alt='right-arrow-icon' />
+		<a className='w-max flex items-center justify-center gap-2 text-gray-700 dark:text-white border-[.5px] border-gray-700 dark:border-white rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover dark:hover:bg-darkHover duration-200' href="">
+			Show more <Image className='w-4' src={darkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='right-arrow-icon' />
 		</a>
 	</div>
   )

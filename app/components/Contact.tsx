@@ -58,7 +58,7 @@ const Contact = () => {
 				console.error(`Error: ${data}`)
 				setStatus(data.message)
 			}
-		} catch (err) {
+		} catch (err: unknown) {
 			console.error(`Error: ${err}`);
 		} finally {
 			setIsLoading(false)
@@ -68,7 +68,7 @@ const Contact = () => {
 	return (
 		<div
 			id='contact'
-			className='w-full px-[12%] py-10 scroll-mt-16 bg-[url(/footer-bg-color.png)] bg-no-repeat bg-center bg-[length:90%_auto]'
+			className='w-full px-[12%] py-10 scroll-mt-16 bg-[url(/footer-bg-color.png)] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
 		>
 			<h4 className='text-center text-lg mb-2 font-Ovo'>Connect With Me</h4>
 			<h2 className='text-center text-5xl mb-5 font-Ovo'>Get In Touch</h2>
@@ -79,14 +79,14 @@ const Contact = () => {
 			<form className='max-w-2xl mx-auto' onSubmit={handleSubmit}>
 				<div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
 					<input
-						className='flex-1 border-[.5px] border-[#A4A4A4] p-3 rounded-lg outline-none bg-white'
+						className='flex-1 border-[.5px] border-[#A4A4A4] dark:border-white/90 p-3 rounded-lg outline-none bg-white dark:bg-darkHover/30'
 						name='name'
 						type="text"
 						placeholder='Enter your name'
 						required
 					/>
 					<input
-						className='flex-1 border-[.5px] border-[#A4A4A4] p-3 rounded-lg outline-none bg-white'
+						className='flex-1 border-[.5px] border-[#A4A4A4] dark:border-white/90 p-3 rounded-lg outline-none bg-white dark:bg-darkHover/30'
 						name='email'
 						type="email"
 						placeholder='Enter your email'
@@ -95,14 +95,14 @@ const Contact = () => {
 				</div>
 				<textarea
 					name="message"
-					className='w-full p-4 outline-none border-[.5px] border-gray-400 rounded-lg bg-white mb-6'
+					className='w-full p-4 outline-none border-[.5px] border-gray-400 dark:border-white/90 rounded-lg bg-white dark:bg-darkHover/30 mb-6'
 					rows={6}
 					placeholder='Enter your message'
 					required
 				></textarea>
 				<button
 					type='submit'
-					className='py-3 px-8 w-max flex items-center justify-between mx-auto gap-2 bg-black/80 text-white rounded-full hover:bg-black duration-200'
+					className='py-3 px-8 w-max flex items-center justify-between mx-auto gap-2 bg-black/80 dark:bg-transparent text-white rounded-full hover:bg-black dark:hover:bg-darkHover duration-200 dark:border-[.5px]'
 				>
 					{ isLoading ? 'Sending...' : (
 						<>

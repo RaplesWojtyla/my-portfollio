@@ -34,8 +34,68 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import android_studio from './android-studio-icon.png';
 import mysql from './mysql-icon.png'
+import { StaticImageData } from 'next/image';
 
-export const assets = {
+type Assets = {
+    code_icon: StaticImageData;
+    code_icon_dark: StaticImageData;
+    edu_icon: StaticImageData;
+    edu_icon_dark: StaticImageData;
+    project_icon: StaticImageData;
+    project_icon_dark: StaticImageData;
+    vscode: StaticImageData;
+    firebase: StaticImageData;
+    figma: StaticImageData;
+    git: StaticImageData;
+    mongodb: StaticImageData;
+    right_arrow_white: StaticImageData;
+    mail_icon: StaticImageData;
+    mail_icon_dark: StaticImageData;
+    profile_img: StaticImageData;
+    download_icon: StaticImageData;
+    hand_icon: StaticImageData;
+    header_bg_color: StaticImageData;
+    moon_icon: StaticImageData;
+    sun_icon: StaticImageData;
+    arrow_icon: StaticImageData;
+    arrow_icon_dark: StaticImageData;
+    menu_black: StaticImageData;
+    menu_white: StaticImageData;
+    close_black: StaticImageData;
+    close_white: StaticImageData;
+    web_icon: StaticImageData;
+    mobile_icon: StaticImageData;
+    ui_icon: StaticImageData;
+    graphics_icon: StaticImageData;
+    right_arrow: StaticImageData;
+    send_icon: StaticImageData;
+    right_arrow_bold: StaticImageData;
+    right_arrow_bold_dark: StaticImageData;
+    android_studio: StaticImageData;
+    mysql: StaticImageData;
+}
+
+type ProjectData = {
+    title: string
+    description: string
+    bgImage: string
+}
+
+type ServiceData = {
+    icon: StaticImageData
+    title: string
+    description: string
+    link: string
+}
+
+type InfoList = {
+    icon: StaticImageData
+    iconDark: StaticImageData
+    title: string
+    description: string
+}
+
+export const assets: Assets = {
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -74,7 +134,7 @@ export const assets = {
     mysql
 };
 
-export const projectData = [
+export const projectData: Array<ProjectData> = [
     {
         title: 'Assembly: Endgame',
         description: 'Web App',
@@ -107,17 +167,17 @@ export const projectData = [
     },
 ]
 
-export const serviceData = [
+export const serviceData: Array<ServiceData> = [
     { icon: assets.web_icon, title: 'Web App', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile App', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
 ]
 
-export const infoList = [
+export const infoList: Array<InfoList> = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript, TypeScript, React.Js, Next.Js, Express.Js, PHP, Laravel' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Undergraduate student at Universitas Sumatera Utara.' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
-export const toolsData = [
+export const toolsData: Array<StaticImageData> = [
     assets.vscode, assets.android_studio, assets.mongodb, assets.mysql, assets.git
 ];
