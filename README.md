@@ -1,26 +1,21 @@
-# My Portfolio (Next.Js + Tailwind CSS)
+# 🚀 Personal Portfolio Website  
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository contains the code for my personal portfolio website, built using **Next.js**, **TailwindCSS**, and **Motion** to provide a modern, responsive, and interactive experience.  
 
-## Getting Started
+## ✨ Features  
+- **🏠 Home Page** – A brief introduction with engaging animations.  
+- **📝 About Me** – Showcasing my experience, skills, and career journey.  
+- **💼 Services** – The services I provide.
+- **🚀 Projects** – A collection of projects I’ve worked on, complete with descriptions and links to repositories/demos.  
+- **📩 Contact** – A form and information to get in touch with me.  
+- **🎨 Smooth Animations** – Powered by Motion for dynamic and interactive transitions.  
+- **📱 Responsive Design** – Optimized for different devices.  
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used  
+- **Framework**: [Next.js](https://nextjs.org/)  
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)  
+- **Animations**: [Motion](https://motion.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ## Learn More
 
