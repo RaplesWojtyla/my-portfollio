@@ -63,7 +63,7 @@ const Header = () => {
 				<motion.a
 					className='flex items-center gap-2 px-10 py-3 border rounded-full border-gray-500 bg-white dark:text-black'
 					href="/Patra Rafles Wostyla Sinaga_CV.pdf"
-					initial={{ y: -30, opacity: 0 }}
+					initial={{ y: 30, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: .6, delay: 1.2 }}
 					download
