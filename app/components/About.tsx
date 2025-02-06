@@ -68,7 +68,7 @@ const About = ({ darkMode } : {darkMode: boolean}) => {
 				>
 					{infoList.map(({icon, iconDark, title, description}: InfoList, index: number) => (
 						<motion.li
-							className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover dark:hover:bg-darkHover hover:shadow-black dark:hover:shadow-white duration-150' 
+							className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover dark:hover:bg-darkHover hover:shadow-black dark:hover:shadow-white hover:-translate-y-1 duration-150' 
 							key={index}
 							whileHover={{ scale: 1.05 }}
 						>
@@ -102,7 +102,7 @@ const About = ({ darkMode } : {darkMode: boolean}) => {
 				>
 					{toolsData.map((tool: StaticImageData, index: number) => (
 						<motion.li
-							className='w-12 sm:w-14 border border-gray-400 flex justify-center items-center rounded-lg aspect-square cursor-pointer hover:bg-lightHover dark:hover:bg-darkHover duration-150' 
+							className='w-12 sm:w-14 border border-gray-400 flex justify-center items-center rounded-lg aspect-square cursor-pointer hover:bg-lightHover dark:hover:bg-darkHover hover:-translate-y-1 duration-150' 
 							key={index}
 							whileHover={{ scale: 1.1 }}
 						>

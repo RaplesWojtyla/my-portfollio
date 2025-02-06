@@ -52,7 +52,7 @@ const Services = ({ darkMode } : { darkMode: boolean }) => {
 			>
 				{serviceData.map(({ icon, title, description, link }: ServiceData, index: number) => (
 					<motion.div
-						className='border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover dark:hover:bg-darkHover hover:shadow-black dark:hover:shadow-white duration-150 cursor-pointer'
+						className='border border-gray-400 rounded-lg px-8 py-12 hover:bg-lightHover dark:hover:bg-darkHover hover:shadow-black dark:hover:shadow-white hover:-translate-y-1 duration-150 cursor-pointer'
 						key={index}
 						whileHover={{ scale: 1.05 }}
 					>
