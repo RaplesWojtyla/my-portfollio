@@ -34,6 +34,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import android_studio from './android-studio-icon.png';
 import mysql from './mysql-icon.png'
+import neondb from './neondb.png'
 import { StaticImageData } from 'next/image';
 
 type Assets = {
@@ -73,12 +74,14 @@ type Assets = {
     right_arrow_bold_dark: StaticImageData;
     android_studio: StaticImageData;
     mysql: StaticImageData;
+    neondb: StaticImageData;
 }
 
 type ProjectData = {
     title: string
     description: string
     bgImage: string
+    url: string
 }
 
 type ServiceData = {
@@ -131,39 +134,52 @@ export const assets: Assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     android_studio,
-    mysql
+    mysql,
+    neondb
 };
 
 export const projectData: Array<ProjectData> = [
     {
+        title: 'Apotek Pelangi',
+        description: 'Online Pharmacy Platform',
+        bgImage: '/apotek-pelangi.png',
+        url: 'https://apotek-pelangi.vercel.app'
+    },
+    {
         title: 'Assembly: Endgame',
         description: 'Web App',
         bgImage: '/assembly-endgame.png',
+        url: 'https://github.com/RaplesWojtyla/Assembly-Endgame'
     },
     {
         title: 'Recipe Generator',
         description: 'Web App with Integrated AI',
         bgImage: '/recipe-gene.png',
+        url: 'https://github.com/RaplesWojtyla/RecipeGenerator'
     },
     {
         title: 'Poskesdes Laubaleng',
         description: 'E-Commerce Web App',
         bgImage: '/poskesdes.png',
+        url: 'https://github.com/RaplesWojtyla/poskesdes-laubaleng'
     },
     {
         title: 'E-Cycle',
         description: 'Mobile App',
         bgImage: '/work-1.png',
+        url: 'https://github.com/RaplesWojtyla/E-Cycle-App'
     },
     {
         title: 'Sparks',
         description: 'Social Media Web App',
         bgImage: '/sparks.png',
+        url: 'https://github.com/RaplesWojtyla/Sparks'
     },
     {
         title: 'Skill Vortex',
         description: 'Education Web App',
         bgImage: '/skill-vortex.png',
+        url: 'https://github.com/RaplesWojtyla/SkillVortex'
     },
 ]
 
@@ -179,5 +195,5 @@ export const infoList: Array<InfoList> = [
 ];
 
 export const toolsData: Array<StaticImageData> = [
-    assets.vscode, assets.android_studio, assets.mongodb, assets.mysql, assets.git
+    assets.vscode, assets.android_studio, assets.mongodb, assets.mysql, assets.git, assets.neondb
 ];
